@@ -1,4 +1,3 @@
-# WindPowerSystemV3
 Application "WindPowerSystemV3" is a pet test-project (only back-end).
 
 Developed by:
