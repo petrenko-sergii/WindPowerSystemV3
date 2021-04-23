@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
-namespace WindPowerSystemV3.DTOs
+﻿namespace WindPowerSystemV3.DTOs
 {
 	public class TurbineDto
 	{
@@ -12,5 +7,7 @@ namespace WindPowerSystemV3.DTOs
 		public string SerialNum { get; set; }
 
 		public int ProdMW { get; set; }
+
+		public int TurbineTypeId { get; set; }
 	}
 }

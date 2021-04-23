@@ -21,6 +21,7 @@ namespace WindPowerSystemV3.DI
 
 			//Registration Services
 			builder.RegisterType<TurbineTypeService>().As<ITurbineTypeService>().PropertiesAutowired();
+			builder.RegisterType<TurbineService>().As<ITurbineService>().PropertiesAutowired();
 		}
 	}
 }

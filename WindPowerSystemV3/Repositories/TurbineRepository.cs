@@ -1,11 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using WindPowerSystemV3.Repositories.Interfaces;
+using WindPowerSystemV3.Repositories.Models;
 
 namespace WindPowerSystemV3.Repositories
 {
-	public class TurbineRepository
+	public class TurbineRepository : BaseRepository<Turbine>, ITurbineRepository
 	{
+		public TurbineRepository(Context dbContext) : base(dbContext)
+		{
+		}
 	}
 }

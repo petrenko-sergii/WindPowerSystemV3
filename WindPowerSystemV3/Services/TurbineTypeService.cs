@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
 using WindPowerSystemV3.DTOs;
 using WindPowerSystemV3.Repositories.Interfaces;
 using WindPowerSystemV3.Repositories.Models;
@@ -58,15 +57,9 @@ namespace WindPowerSystemV3.Services
 		{
 			var entityTurbineType = Mapper.Map<TurbineTypeDto, TurbineType>(dto);
 
-			entityTurbineType.Id = GetNextId();
 			turbineTypeRepository.Create(entityTurbineType);
 
 			return Mapper.Map<TurbineType, TurbineTypeDto>(turbineTypeRepository.FindById(entityTurbineType.Id));
-		}
-
-		private int GetNextId()
-		{
-			return turbineTypeRepository.GetAll().Max(x => x.Id) + 1;
 		}
 	}
 }

@@ -13,5 +13,6 @@ namespace WindPowerSystemV3.Repositories
 
 		// DB sets
 		public DbSet<TurbineType> TurbineTypes { get; set; }
+		public DbSet<Turbine> Turbines { get; set; }
 	}
 }
