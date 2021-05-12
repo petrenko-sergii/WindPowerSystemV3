@@ -8,8 +8,8 @@ namespace WindPowerSystemV3.Controllers
 {
 	[Route("api/[controller]")]
 	[ApiController]
-	public class TurbineTypeController : Controller
-    {
+	public class TurbineTypeController : ControllerBase
+	{
 		private readonly ITurbineTypeService turbineTypeService;
 
 		public TurbineTypeController(ITurbineTypeService turbineTypeService)

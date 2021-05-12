@@ -19,7 +19,7 @@ namespace WindPowerSystemV3.Repositories
 			var typeN = new TurbineType() { Model = "N43", Capacity = 800 };
 			var typeE = new TurbineType() { Model = "E-44", Capacity = 900 };
 
-			// Insert turbine types into the Database
+			// Insert turbine types into database
 			dbContext.TurbineTypes.AddRange(typeV, typeSG, typeN, typeE);
 
 			dbContext.SaveChanges();
@@ -32,7 +32,7 @@ namespace WindPowerSystemV3.Repositories
 			var turbineN = new Turbine() { SerialNum = "N43/2011-dk/kol-536", ProdMW = 800, TurbineTypeId = 3 };
 			var turbineE = new Turbine() { SerialNum = "E-44/2016-dk/kol-221", ProdMW = 900, TurbineTypeId = 4 };
 
-			// Insert turbines into the Database
+			// Insert turbines into database
 			dbContext.Turbines.AddRange(turbineV, turbineSG, turbineN, turbineE);
 
 			dbContext.SaveChanges();
