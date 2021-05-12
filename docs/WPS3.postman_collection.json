@@ -40,6 +40,23 @@
 			"response": []
 		},
 		{
+			"name": "GetValuesNotFromDatabase",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/valuesnotfromdb",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"valuesnotfromdb"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "GetTurbine",
 			"request": {
 				"method": "GET",
